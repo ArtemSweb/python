@@ -1,5 +1,9 @@
 from random import *
 
+def start_game():
+    num = int(input('Введите правую границу интервала случайного числа(1, n): '))    
+    initialization_game(num)
+
 def is_valid(num):
     return str(num).isdigit() and int(num) in range(1, 101)
 
@@ -33,9 +37,6 @@ def get_answer():
     else:
         print('Спасибо, что играли в числовую угадайку. Еще увидимся...')
 
-def start_game():
-    num = int(input('Введите правую границу интервала случайного числа(1, n): '))    
-    initialization_game(num)
 
 print('Добро пожаловать в числовую угадайку')
 start_game()
